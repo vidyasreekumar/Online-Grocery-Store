@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>Grocery Store</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <header>
+            GoMart 
+            <div class="cart">
+                <img src="images/headercart.jpg" height="25px" width="30px">
+                <div id="cartCount">0</div>
+            </div>
+            <div id="dateTime">
+                <p id="date"></p>
+            </div>
+        </header>
+        <div class="navbar">
+            <a href="my-account.html">My-Account</a>
+            <a href="mycart.html">My Cart</a>
+            <a href="freshproducts.html">Fresh Products</a>
+            <a href="frozen.html">Frozen</a>
+            <a href="pantry.html">Pantry</a>
+            <a href="breakfast&cereal.html">Breakfast & Cereal</a>
+            <a href="baking.html">Baking</a>
+            <a href="snacks.html">Snacks</a>
+            <a href="candy.html">Candy</a>
+            <a href="speciality_shops.html">Speciality Shops</a>
+            <a class="active" href="deals.html">Deals</a>
+            <a href="about-us.html">About-Us</a>
+            <a href="contact-us.html">Contact-Us</a>
+        </div>
+        <div class="sidebar">
+            <div class="textbox">
+                <h3 style="text-align: center;">Categories</h3>
+                <ul>
+                <li>Home</li>
+                <li>Technology</li>
+                <li>Kitchen & Dining</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="card rollbacks">
+                <img class="images" src="images/nightstand.jpg">
+                <p class="name">Nightstand</p>
+                <p class="price">$7.99</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card rollbacks">
+                <img class="images" src="images/barstools.jpg">
+                <p class="name">Bar Stools (Set of 2)</p>
+                <p class="price">$10.99</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card rollbacks">
+                <img class="images" src="images/appleairpods.jpg">
+                <p class="name">Apple Airpods</p>
+                <p class="price">$290</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>  
+            <div class="card rollbacks">
+                <img class="images" src="images/printer.jpg">
+                <p class="name">Wireless Color Printer</p>
+                <p class="price">$150.99</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div> 
+             
+            <div class="card rollbacks">
+                <img class="images" src="images/smartairfryer.jpg">
+                <p class="name">Smart Air Fryer</p>
+                <p class="price">$120.50</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card rollbacks">
+                <img class="images" src="images/microwaveoven.jpg">
+                <p class="name">Microwave Oven</p>
+                <p class="price">$160.22</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+                 
+        </div> 
+        <footer>
+            <div id="myinfo">
+                Vidya Sreekumar<br>
+                NetID: vxs220066<br>
+                CS 6314.001
+            </div>
+            <p>Free delivery for first time users!</p>
+        </footer>
+        <script type="text/javascript" src="implement.js"></script>
+        <script src="cards.js"></script>
+    </body>
+</html>

@@ -1,0 +1,336 @@
+<html>
+    <head>
+        <title>Grocery Store</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <header>
+                GoMart 
+                <div class="cart">
+                    <img src="images/headercart.jpg" height="25px" width="30px">
+                    <div id="cartCount">0</div>
+                </div>
+                <div id="dateTime">
+                    <p id="date"></p>
+                </div>
+        </header>
+        <div class="navbar">
+            <a href="my-account.html">My-Account</a>
+            <a href="mycart.html">My Cart</a>
+            <a href="freshproducts.html">Fresh Products</a>
+            <a class="active" href="frozen.html">Frozen</a>
+            <a href="pantry.html">Pantry</a>
+            <a href="breakfast&cereal.html">Breakfast & Cereal</a>
+            <a href="baking.html">Baking</a>
+            <a href="snacks.html">Snacks</a>
+            <a href="candy.html">Candy</a>
+            <a href="speciality_shops.html">Speciality Shops</a>
+            <a href="deals.html">Deals</a>
+            <a href="about-us.html">About-Us</a>
+            <a href="contact-us.html">Contact-Us</a>
+        </div>
+        <div class="sidebar">
+            <div class="textbox">
+                <h3 style="text-align: center;">Categories</h3>
+                <ul>
+                <li><a class="category active" onclick="filterFunction('all')">All</a></li>
+                <li><a class="category active" onclick="filterFunction('frozenbreakfast')">Frozen Breakfast</a></li>
+                <li><a class="category active" onclick="filterFunction('frozendessert')">Frozen Dessert</a></li>
+                <li><a class="category active" onclick="filterFunction('frozenmeals')">Frozen Meals</a></li>
+                <li><a class="category active" onclick="filterFunction('frozenpizza')">Frozen Pizza</a></li>
+                <li><a class="category active" onclick="filterFunction('frozenmeat')">Frozen Meat</a></li>
+                <li><a class="category active" onclick="filterFunction('frozensnacks')">Frozen Snacks</a></li>
+                <li><a class="category active" onclick="filterFunction('rollbacks')">Rollbacks</a></li>
+                </ul>
+            </div> 
+        </div> 
+        <div class="main">
+            <div class="card frozenbreakfast">
+                <img class="images" src="images/ham&cheesescramble.jpg">
+                <p class="name">Ham & Cheese Scramble</p>
+                <p class="price">$2.26</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card frozenbreakfast">
+                <img class="images" src="images/beef&beanburrito.jpg">
+                <p class="name">Beef & Bean Burritos</p>
+                <p class="price">$5.98</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card frozenbreakfast">
+                <img class="images" src="images/meatloversbreakfastbowl.jpg">
+                <p class="name">Meat Lovers Breakfast</p>
+                <p class="price">$5.98</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card frozenbreakfast">
+                <img class="images" src="images/buttermilkpancake.jpg">
+                <p class="name">Buttermilk Pancakes</p>
+                <p class="price">$4.42</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+
+            <div class="card frozendessert">
+                <img class="images" src="images/chocolatecreampie.jpg">
+                <p class="name">Chocolate Cream Pie</p>
+                <p class="price">$6.98</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card frozendessert">
+                <img class="images" src="images/fudgebars.jpg">
+                <p class="name">Fudge Bars</p>
+                <p class="price">$6.98</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card frozendessert">
+                <img class="images" src="images/vanillaicecream.jpg">
+                <p class="name">Vanilla Ice Creams</p>
+                <p class="price">$6.98</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card frozendessert">
+                <img class="images" src="images/icecreamcones.jpg">
+                <p class="name">Ice Cream Cones</p>
+                <p class="price">$6.98</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card frozendessert">
+                <img class="images" src="images/chocolateicecream.jpg">
+                <p class="name">Chocolate Ice Cream</p>
+                <p class="price">$6.57</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+
+            <div class="card frozenmeals">
+                <img class="images" src="images/chickenfettuccine.jpg">
+                <p class="name">Chicken Fettuccine</p>
+                <p class="price">$2.94</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card frozenmeals">
+                <img class="images" src="images/lasagna.jpg">
+                <p class="name">Lasagna</p>
+                <p class="price">$5.94</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card frozenmeals">
+                <img class="images" src="images/meatloafmeal.jpg">
+                <p class="name">Meat Loaf Meal</p>
+                <p class="price">$3.48</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card frozenmeals">
+                <img class="images" src="images/chickenenchiladas.jpg">
+                <p class="name">Chicken Enchiladas</p>
+                <p class="price">$4.17</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+
+            <div class="card frozenpizza">
+                <img class="images" src="images/classiccrustcheesepizza.jpg">
+                <p class="name">Cheese Pizza</p>
+                <p class="price">$5.24</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card frozenpizza">
+                <img class="images" src="images/pepperonipizza.jpg">
+                <p class="name">Pepperoni Pizza</p>
+                <p class="price">$5.24</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card frozenpizza">
+                <img class="images" src="images/sausage&pepperonipizza.jpg">
+                <p class="name">Sausage & Pepperoni Pizza</p>
+                <p class="price">$3.86</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+
+            <div class="card frozenmeat">
+                <img class="images" src="images/chickendrumsticks.jpg">
+                <p class="name">Chicken Drumsticks</p>
+                <p class="price">$7.97</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card frozenmeat">
+                <img class="images" src="images/chickenthighs.jpg">
+                <p class="name">Chicken Thighs</p>
+                <p class="price">$9.44</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card frozenmeat">
+                <img class="images" src="images/chickenwings.jpg">
+                <p class="name">Chicken Wings</p>
+                <p class="price">$12.98</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+
+            <div class="card frozensnacks">
+                <img class="images" src="images/meatballs.jpg">
+                <p class="name">Meat Balls</p>
+                <p class="price">$6.99</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card frozensnacks">
+                <img class="images" src="images/pizzarolls.jpg">
+                <p class="name">Pizza Rolls</p>
+                <p class="price">$5.78</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card frozensnacks">
+                <img class="images" src="images/potatosticks.jpg">
+                <p class="name">Potato Sticks</p>
+                <p class="price">$5.94</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card frozensnacks">
+                <img class="images" src="images/corndogs.jpg">
+                <p class="name">Corn Dogs</p>
+                <p class="price">$4.94</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div> 
+            
+            <div class="card rollbacks">
+                <img class="images" src="images/chickenstrips.jpg">
+                <p class="name">Chicken Strips</p>
+                <p class="price">$3.99</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card rollbacks">
+                <img class="images" src="images/fishsticks.jpg">
+                <p class="name">Fish Sticks</p>
+                <p class="price">$4.69</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card rollbacks">
+                <img class="images" src="images/dutchapplepie.jpg">
+                <p class="name">Dutch Apple Pie</p>
+                <p class="price">$5.63</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card rollbacks">
+                <img class="images" src="images/shrimpalfredo.jpg">
+                <p class="name">Shrimp Alfredo</p>
+                <p class="price">$3.87</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="myinfo">
+                Vidya Sreekumar<br>
+                NetID: vxs220066<br>
+                CS 6314.001
+            </div>
+            <p>Free delivery for first time users!</p>
+        </footer>
+        <script type="text/javascript" src="implement.js"></script>
+        <script src="cards.js"></script>
+    </body>
+</html>

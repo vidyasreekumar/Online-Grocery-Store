@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <title>Grocery Store</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <header>
+                GoMart 
+                <div class="cart">
+                    <img src="images/headercart.jpg" height="25px" width="30px">
+                    <div id="cartCount">0</div>
+                </div>
+                <div id="dateTime">
+                    <p id="date"></p>
+                </div>
+        </header>
+        <div class="navbar">
+            <a href="my-account.html">My-Account</a>
+            <a href="mycart.html">My Cart</a>
+            <a href="freshproducts.html">Fresh Products</a>
+            <a href="frozen.html">Frozen</a>
+            <a href="pantry.html">Pantry</a>
+            <a href="breakfast&cereal.html">Breakfast & Cereal</a>
+            <a href="baking.html">Baking</a>
+            <a class="active" href="snacks.html">Snacks</a>
+            <a href="candy.html">Candy</a>
+            <a href="speciality_shops.html">Speciality Shops</a>
+            <a href="deals.html">Deals</a>
+            <a href="about-us.html">About-Us</a>
+            <a href="contact-us.html">Contact-Us</a>
+        </div>
+        <div class="sidebar">
+            <div class="textbox">
+                <h3 style="text-align: center;">Categories</h3>
+                <ul>
+                <li>Chips</li>
+                <li>Cookies</li>
+                <li>Pretzels</li>
+                </ul>
+            </div>
+        </div> 
+        <div class="main">
+            <div class="searchbar">
+                <input type="text" id="searchItem" onkeyup="searchFunction()" placeholder="Search for items" title="Type in a name"><br>
+            </div>
+            <div class="card-permanent">
+                <img class="images" src="images/potatochips.jpg">
+                <p class="name">Potato Chips</p>
+                <p class="price">$2.99</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card-permanent">
+                <img class="images" src="images/tortillachips.jpg">
+                <p class="name">Tortilla Chips</p>
+                <p class="price">$2.99</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card-permanent">
+                <img class="images" src="images/pretzelcrisps.jpg">
+                <p class="name">Pretzel Crisps</p>
+                <p class="price">$1.99</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card-permanent">
+                <img class="images" src="images/pretzelsticks.jpg">
+                <p class="name">Pretzel Sticks</p>
+                <p class="price">$2.99</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card-permanent">
+                <img class="images" src="images/nutterbuttercookies.jpg">
+                <p class="name">Nutter Butter Cookies</p>
+                <p class="price">$4.99</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card-permanent">
+                <img class="images" src="images/lemoncookies.jpg">
+                <p class="name">Lemon Cookies</p>
+                <p class="price">$3.99</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card-permanent">
+                <img class="images" src="images/chocolatechipcookies.jpg">
+                <p class="name">Chocolate Chip Cookies</p>
+                <p class="price">$3.99</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card-permanent">
+                <img class="images" src="images/buttercookies.jpg">
+                <p class="name">Butter Cookies</p>
+                <p class="price">$2.99</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card-permanent">
+                <img class="images" src="images/cornchips.jpg">
+                <p class="name">Corn Chips</p>
+                <p class="price">$2.99</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>      
+            <div class="card-permanent">   
+                <img class="images" src="images/glutenfreepretzeltwists.jpg">
+                <p class="name">Gluten Free Pretzel Twists</p>
+                <p class="price">$3.50</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="myinfo">
+                Vidya Sreekumar<br>
+                NetID: vxs220066<br>
+                CS 6314.001
+            </div>
+            <p>Free delivery for first time users!</p>
+        </footer>
+        <script type="text/javascript" src="implement.js"></script>
+        <script src="cards.js"></script>
+    </body>
+</html>

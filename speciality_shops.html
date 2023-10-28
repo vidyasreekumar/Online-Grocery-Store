@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Grocery Store</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <header>
+            GoMart 
+            <div class="cart">
+                <img src="images/headercart.jpg" height="25px" width="30px">
+                <div id="cartCount">0</div>
+            </div>
+            <div id="dateTime">
+                <p id="date"></p>
+            </div>
+        </header>
+        <div class="navbar">
+            <a href="my-account.html">My-Account</a>
+            <a href="mycart.html">My Cart</a>
+            <a href="freshproducts.html">Fresh Products</a>
+            <a href="frozen.html">Frozen</a>
+            <a href="pantry.html">Pantry</a>
+            <a href="breakfast&cereal.html">Breakfast & Cereal</a>
+            <a href="baking.html">Baking</a>
+            <a href="snacks.html">Snacks</a>
+            <a href="candy.html">Candy</a>
+            <a class="active" href="speciality_shops.html">Speciality Shops</a>
+            <a href="deals.html">Deals</a>
+            <a href="about-us.html">About-Us</a>
+            <a href="contact-us.html">Contact-Us</a>
+        </div>
+        <div class="sidebar">
+        </div> 
+        <div class="main">
+            <div id="questions">
+                <button  style="margin-top: 30px;" onclick="displayQuestion()">Click to know special offers</button>
+            </div>
+            <button id="next" style="display: none;">Next</button>
+            <button id="skip" style="display: none;">Skip</button>
+
+            <div id="results" style="display: none;">
+                <p>You qualify for:</p>
+                <p id="offer"></p>
+                <p id="reason"></p>
+                <p>Time spent on questions: <span id="time-spent">0 seconds</span></p>
+            </div>      
+
+        </div>        
+        <footer>
+            <div id="myinfo">
+                Vidya Sreekumar<br>
+                NetID: vxs220066<br>
+                CS 6314.001
+            </div>
+            <p>Free delivery for first time users!</p>
+        </footer>
+        <script type="text/javascript" src="implement.js"></script>
+        <script type="text/javascript" src="cards.js"></script>
+    </body>
+</html>

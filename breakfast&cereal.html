@@ -1,0 +1,199 @@
+<html>
+    <head>
+        <title>Grocery Store</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <header>
+                GoMart 
+                <div class="cart">
+                    <img src="images/headercart.jpg" height="25px" width="30px">
+                    <div id="cartCount">0</div>
+                </div>
+                <div id="dateTime">
+                    <p id="date"></p>
+                </div>
+        </header>
+        <div class="navbar">
+            <a href="my-account.html">My-Account</a>
+            <a href="mycart.html">My Cart</a>
+            <a href="freshproducts.html">Fresh Products</a>
+            <a href="frozen.html">Frozen</a>
+            <a href="pantry.html">Pantry</a>
+            <a class="active" href="breakfast&cereal.html">Breakfast & Cereal</a>
+            <a href="baking.html">Baking</a>
+            <a href="snacks.html">Snacks</a>
+            <a href="candy.html">Candy</a>
+            <a href="speciality_shops.html">Speciality Shops</a>
+            <a href="deals.html">Deals</a>
+            <a href="about-us.html">About-Us</a>
+            <a href="contact-us.html">Contact-Us</a>
+        </div>
+        <div class="sidebar">
+            <div class="textbox">
+                <h3 style="text-align: center;">Categories</h3>
+                <ul>
+                    <li><a class="category active" onclick="filterFunction('all')">All</a></li>
+                    <li><a class="category" onclick="filterFunction('cerealshop')">Cereal Shop</a></li>
+                    <li><a class="category" onclick="filterFunction('pancake&waffles')">Pancakes & Waffles</a></li>
+                    <li><a class="category" onclick="filterFunction('breakfastbreads')">Breakfast Breads</a></li>
+                    <li><a class="category" onclick="filterFunction('oatmeal&grits')">Oatmeal & Grits</a></li>
+                    <li><a class="category" onclick="filterFunction('rollbacks')">Rollbacks</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="main">
+            <div class="card cerealshop">
+                <img class="images" src="images/cerealwithmarshmallow.jpg">
+                <p class="name">Cereal with Marshmallows</p>
+                <p class="price">$6.98</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>        
+            <div class="card cerealshop">
+                <img class="images" src="images/shreddedwheatcereal.jpg">
+                <p class="name">Shredded Wheat Cereal</p>
+                <p class="price">$10.98</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div> 
+            <div class="card pancake&waffles">
+                <img class="images" src="images/belgianwaffle.jpg">
+                <p class="name">Belgian Waffle</p>
+                <p class="price">$5.98</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card pancake&waffles">
+                <img class="images" src="images/pancake.jpg">
+                <p class="name">Pancake</p>
+                <p class="price">$4.98</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card pancake&waffles">
+                <img class="images" src="images/peanutbutterpancake.jpg">
+                <p class="name">Peanut Butter Pancake</p>
+                <p class="price">$5.98</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card breakfastbreads">
+                <img class="images" src="images/cinamonraisinbagels.jpg">
+                <p class="name">Cinnamon Raisin Bagels</p>
+                <p class="price">$4.98</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card breakfastbreads">
+                <img class="images" src="images/blueberrybagels.jpg">
+                <p class="name">Blueberry Bagels</p>
+                <p class="price">$3.99</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card breakfastbreads">
+                <img class="images" src="images/buttercroissants.jpg">
+                <p class="name">Butter Croissants</p>
+                <p class="price">$2.98</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card breakfastbreads">
+                <img class="images" src="images/englishmuffins.jpg">
+                <p class="name">English Muffins</p>
+                <p class="price">$4.98</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card oatmeal&grits">
+                <img class="images" src="images/oatmeal.jpg">
+                <p class="name">Oatmeal Apples & Cinnamon</p>
+                <p class="price">$7.99</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card oatmeal&grits">
+                <img class="images" src="images/oats.jpg">
+                <p class="name">Oats</p>
+                <p class="price">$3.98</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card oatmeal&grits">
+                <img class="images" src="images/instantgrits.jpg">
+                <p class="name">Instant Grits</p>
+                <p class="price">$5.45</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+
+            <div class="card rollbacks">
+                <img class="images" src="images/fruitloops.jpg">
+                <p class="name">Fruit Loops</p>
+                <p class="price">$3.32</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+            <div class="card rollbacks">
+                <img class="images" src="images/pastries.jpg">
+                <p class="name">Pastries</p>
+                <p class="price">$3.45</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="myinfo">
+                Vidya Sreekumar<br>
+                NetID: vxs220066<br>
+                CS 6314.001
+            </div>
+            <p>Free delivery for first time users!</p>
+        </footer>
+        <script type="text/javascript" src="implement.js"></script>
+        <script src="cards.js"></script>
+    </body>
+</html>

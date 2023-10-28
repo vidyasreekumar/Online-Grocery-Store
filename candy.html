@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <title>Grocery Store</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <header>
+                GoMart 
+                <div class="cart">
+                    <img src="images/headercart.jpg" height="25px" width="30px">
+                    <div id="cartCount">0</div>
+                </div>
+                <div id="dateTime">
+                    <p id="date"></p>
+                </div>
+        </header>
+        <div class="navbar">
+            <a href="my-account.html">My-Account</a>
+            <a href="mycart.html">My Cart</a>
+            <a href="freshproducts.html">Fresh Products</a>
+            <a href="frozen.html">Frozen</a>
+            <a href="pantry.html">Pantry</a>
+            <a href="breakfast&cereal.html">Breakfast & Cereal</a>
+            <a href="baking.html">Baking</a>
+            <a href="snacks.html">Snacks</a>
+            <a class="active" href="candy.html">Candy</a>
+            <a href="speciality_shops.html">Speciality Shops</a>
+            <a href="deals.html">Deals</a>
+            <a href="about-us.html">About-Us</a>
+            <a href="contact-us.html">Contact-Us</a>
+        </div>
+        <div class="sidebar">
+            <div class="textbox">
+                <h3 style="text-align: center;">Categories</h3>
+                <ul>
+                    <li>Gummy Candy</li>
+                    <li>Chocolate</li>
+                    <li>Gum</li>
+                </ul>
+            </div>
+        </div> 
+        <div class="main">
+            <div class="searchbar">
+                <input type="text" id="searchItem" onkeyup="searchFunction()" placeholder="Search for items" title="Type in a name"><br>
+            </div>
+            <div class="card-permanent">
+                <img class="images" src="images/gummybears.jpg">
+                <p class="name">Gummy Bears</p>
+                <p class="price">$1.99</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div> 
+            <div class="card-permanent">
+                <img class="images" src="images/gumballs.jpg">
+                <p class="name">Fruit Bubble Gumballs</p>
+                <p class="price">$2.99</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div> 
+            <div class="card-permanent">
+                <img class="images" src="images/mentos.jpg">
+                <p class="name">Mentos Chewing Gum</p>
+                <p class="price">$2.50</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div> 
+            <div class="card-permanent">
+                <img class="images" src="images/orbit.jpg">
+                <p class="name">Orbit Chewing Gum</p>
+                <p class="price">$2.50</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div> 
+            <div class="card-permanent">
+                <img class="images" src="images/bubblegum.jpg">
+                <p class="name">Bubble Gum</p>
+                <p class="price">$2.22</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div> 
+            <div class="card-permanent">
+                <img class="images" src="images/assortedcandy.jpg">
+                <p class="name">Assorted Chocolate Candy</p>
+                <p class="price">$4.98</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div> 
+            <div class="card-permanent">
+                <img class="images" src="images/milkyway.jpg">
+                <p class="name">Milky Way Chocolate Bar</p>
+                <p class="price">$3.98</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div> 
+            <div class="card-permanent">
+                <img class="images" src="images/kitkat.jpg">
+                <p class="name">Kit Kat Chocolate Wafer</p>
+                <p class="price">$3.98</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div> 
+            <div class="card-permanent">
+                <img class="images" src="images/watermelongummycandy.jpg">
+                <p class="name">Watermelon Gummy Candy</p>
+                <p class="price">$2.50</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div> 
+            <div class="card-permanent">
+                <img class="images" src="images/sourgummyworms.jpg">
+                <p class="name">Sour Gummy Worms</p>
+                <p class="price">$2.50</p>
+                <div class="buttons">
+                    <a class="count" onclick="addToCart(this)">+</a>
+                    <!-- <p class="quantity">0</p> -->
+                    <a class="count" onclick="removeFromCart(this)">-</a>
+                </div>
+            </div>   
+        </div>
+        <footer>
+            <div id="myinfo">
+                Vidya Sreekumar<br>
+                NetID: vxs220066<br>
+                CS 6314.001
+            </div>
+            <p>Free delivery for first time users!</p>
+        </footer>
+        <script type="text/javascript" src="implement.js"></script>
+        <script src="cards.js"></script>
+    </body>
+</html>
