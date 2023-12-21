@@ -1,0 +1,34 @@
+<products>
+    <item>
+        <name>Banana</name>
+        <category>Fresh Products</category>
+       <subcategory>Fruits</subcategory>
+        <price>0.98</price>
+        <quantity>5</quantity>
+        <image>images/banana.jpg</image>
+    </item>
+    <item>
+        <name>Apple</name>
+       <category>Fresh Products</category>
+       <subcategory>Fruits</subcategory>
+        <price>0.98</price>
+        <quantity>5</quantity>
+        <image>images/apple.jpg</image>
+    </item>
+    <item>
+        <name>Strawberry</name>
+        <category>Fresh Products</category>
+       <subcategory>Fruits</subcategory>
+        <price>0.98</price>
+        <quantity>5</quantity>
+        <image>images/strawberry.jpg</image>
+    </item>
+    <item>
+        <name>Apricots</name>
+        <category>Fresh Products</category>
+       <subcategory>Fruits</subcategory>
+        <price>0.98</price>
+        <quantity>5</quantity>
+        <image>images/apricot.jpg</image>
+    </item>
+</products>

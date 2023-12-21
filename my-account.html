@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Grocery Store</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+    </head>
+    <body>
+        <header>
+                GoMart 
+                <div class="cart">
+                    <a href="mycart.html">
+                        <img src="images/headercart.jpg" height="25px" width="30px">
+                    </a>
+                    <div id="cartCount">0</div>
+                </div>
+                <div id="dateTime">
+                    <p id="date"></p>
+                </div>
+        </header>
+        <div class="navbar">
+            <a class="active" href="my-account.html">My-Account</a>
+            <a href="mycart.html">My Cart</a>
+            <a href="freshproducts.html">Fresh Products</a>
+            <a href="frozen.html">Frozen</a>
+            <a href="pantry.html">Pantry</a>
+            <a href="breakfast&cereal.html">Breakfast & Cereal</a>
+            <a href="baking.html">Baking</a>
+            <a href="snacks.html">Snacks</a>
+            <a href="candy.html">Candy</a>
+            <a href="speciality_shops.html">Speciality Shops</a>
+            <a href="deals.html">Deals</a>
+            <a href="about-us.html">About-Us</a>
+            <a href="contact-us.html">Contact-Us</a>
+            <a href="login.html">Signout</a>
+        </div>
+        <div class="sidebar">
+        </div> 
+        <div class="main">
+            <div class="row">
+                <div class="row col-md-12">
+                    <div>
+                        <div style="padding-left:2px">Order History</div>
+                        <div class="adminHeadings">
+                            <p>View transactions by month</p>
+                            <label for="specificMonth">Enter Month:</label>
+                            <input type="month" id="specificMonth">
+                            <button onclick="loadTransactionTable(0)">View Transactions</button>
+                            <div id="getTransactionsByMonth"></div>
+                        </div>
+                        <div class="adminHeadings">
+                            <p>View transactions of last 3 months</p>
+                            <button onclick="loadTransactionTable(1)">View Transactions</button>
+                            <div id="getTransactions"></div>
+                        </div>
+                        <div class="adminHeadings">
+                            <p>View transactions by year</p>
+                            <label for="specificYear">Enter Year:</label>
+                            <input type="number" id="specificYear">
+                            <button onclick="loadTransactionTable(2)">View Transactions</button>
+                            <div id="getTransactionsByYear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="myinfo">
+                Vidya Sreekumar<br>
+                NetID: vxs220066<br>
+                CS 6314.001
+            </div>
+            <p>Free delivery for first time users!</p>
+        </footer>
+        <script>
+            const d = new Date();
+            document.getElementById("date").innerHTML = d;
+        </script>
+        <script type="text/javascript" src="implement.js"></script>
+    </body>
+</html>

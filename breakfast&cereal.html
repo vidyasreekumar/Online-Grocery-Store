@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Grocery Store</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    </head>
+    <body>
+        <header>
+                GoMart 
+                <div class="cart">
+                    <a href="mycart.html">
+                        <img src="images/headercart.jpg" height="25px" width="30px">
+                    </a>
+                    <div id="cartCount">0</div>
+                </div>
+                <div id="dateTime">
+                    <p id="date"></p>
+                </div>
+        </header>
+        <div class="navbar">
+            <a href="my-account.html">My-Account</a>
+            <a href="mycart.html">My Cart</a>
+            <a href="freshproducts.html">Fresh Products</a>
+            <a href="frozen.html">Frozen</a>
+            <a href="pantry.html">Pantry</a>
+            <a class="active" href="breakfast&cereal.html">Breakfast & Cereal</a>
+            <a href="baking.html">Baking</a>
+            <a href="snacks.html">Snacks</a>
+            <a href="candy.html">Candy</a>
+            <a href="speciality_shops.html">Speciality Shops</a>
+            <a href="deals.html">Deals</a>
+            <a href="about-us.html">About-Us</a>
+            <a href="contact-us.html">Contact-Us</a>
+            <a href="login.html">Signout</a>
+        </div>
+        <div class="sidebar">
+            <div class="textbox">
+                <h3 style="text-align: center;">Categories</h3>
+                <ul>
+                    <li><a class="category active" onclick="filterFunction('all')">All</a></li>
+                    <li><a class="category" onclick="filterFunction('Cereal Shop')">Cereal Shop</a></li>
+                    <li><a class="category" onclick="filterFunction('Pancakes and Waffles')">Pancakes & Waffles</a></li>
+                    <li><a class="category" onclick="filterFunction('Breakfast Breads')">Breakfast Breads</a></li>
+                    <li><a class="category" onclick="filterFunction('Oatmeal and Grits')">Oatmeal & Grits</a></li>
+                    <li><a class="category" onclick="filterFunction('Rollbacks')">Rollbacks</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="main" id="main">
+        </div>
+        <footer>
+            <div id="myinfo">
+                Vidya Sreekumar<br>
+                NetID: vxs220066<br>
+                CS 6314.001
+            </div>
+            <p>Free delivery for first time users!</p>
+        </footer>
+        <script>
+            const d = new Date();
+            document.getElementById("date").innerHTML = d;
+            filterFunction("all");
+            function filterFunction(subcat) {
+                if (subcat === 'all') {
+                    fetch('products.php?category=Breakfast%20and%20Cereal')
+                        .then(response => response.json())
+                        .then(data => {
+                            updateProductDisplay(data);
+                        })
+                        .catch(error => console.error('Error:', error));
+                } else {
+                    fetch('products.php?category=Breakfast%20and%20Cereal&subcategory='+subcat)
+                        .then(response => response.json())
+                        .then(data => {
+                            console.log(data);
+                            updateProductDisplay(data);
+                        })
+                        .catch(error => console.error('Error:', error));
+                }
+            }
+        </script>
+        <script type="text/javascript" src="implement.js"></script>
+        <!-- <script type="text/javascript" src="inventoryAsJson.json"></script> -->
+    </body>
+</html>

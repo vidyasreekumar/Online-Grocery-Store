@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Grocery Store</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <header>
+          GoMart 
+          <div id="dateTime">
+              <p id="date"></p>
+          </div>
+        </header>
+        <div class="loginpage">
+            <!-- <div id="signup_success"> -->
+                <p id="signup_success"></p>
+            <!-- </div> -->
+                <div class="signup">
+                    <form id="login" onsubmit="loginForm(event)" action="login.php" method="post">
+                        <label for="username">Username</label><br>
+                        <input type="text" name="username" placeholder="Username"><br>
+                        <label for="pwd">Password</label><br>
+                        <input type="password" name="pwd" placeholder="Password"><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                    New User?
+                    <a href="register.html" style="font-size: 20px;">Create Account</a>
+                </div>
+        </div>
+    <footer>
+        <div id="myinfo">
+            Vidya Sreekumar<br>
+            NetID: vxs220066<br>
+            CS 6314.001
+        </div>
+        <p>Free delivery for first time users!</p>
+    </footer>
+    <script>
+        const d = new Date();
+        document.getElementById("date").innerHTML = d;
+    </script>
+    <script type="text/javascript" src="implementRegister.js"></script>
+    </body>
+</html>

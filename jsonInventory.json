@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "name": "Boiled Peanuts",
+            "category" : "Pantry",
+            "subcategory" : "Canned Goods",
+            "price": 5.94,
+            "quantity": 5,
+            "image" : "images/boiledpeanuts.jpg"
+        },
+        {
+            "name": "Tomato Sauce",
+            "category" : "Pantry",
+            "subcategory" : "Canned Goods",
+            "price": 3.94,
+            "quantity": 5,
+            "image" : "images/tomatosauce.jpg"
+        },
+        {
+            "name": "Sweet Peas",
+            "category" : "Pantry",
+            "subcategory" : "Canned Goods",
+            "price": 3.94,
+            "quantity": 5,
+            "image" : "images/sweetpeas.jpg"
+        }
+    ]
+}

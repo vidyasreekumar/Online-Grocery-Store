@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Grocery Store</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <header>
+            GoMart 
+            <div class="cart">
+                <a href="mycart.html">
+                    <img src="images/headercart.jpg" height="25px" width="30px">
+                </a>
+                <div id="cartCount">0</div>
+            </div>
+            <div id="dateTime">
+                <p id="date"></p>
+            </div>
+        </header>
+        <div class="navbar">
+            <a href="my-account.html">My-Account</a>
+            <a href="mycart.html">My Cart</a>
+            <a href="freshproducts.html">Fresh Products</a>
+            <a href="frozen.html">Frozen</a>
+            <a href="pantry.html">Pantry</a>
+            <a href="breakfast&cereal.html">Breakfast & Cereal</a>
+            <a href="baking.html">Baking</a>
+            <a href="snacks.html">Snacks</a>
+            <a href="candy.html">Candy</a>
+            <a href="speciality_shops.html">Speciality Shops</a>
+            <a href="deals.html">Deals</a>
+            <a class="active" href="about-us.html">About-Us</a>
+            <a href="contact-us.html">Contact-Us</a>
+            <a href="login.html">Signout</a>
+        </div>
+        <div class="sidebar">
+        </div> 
+        <div class="desc">
+            <dl style="font-size: 20px;">
+                <dt><strong>Welcome to GoMart!!</strong></dt>
+                <dd>The freshest and highest quality groceries right at your fingertips</dd>
+            </dl>
+            <ul>At GoMart, we are committed to several core values that guide every decision we make:
+                <li><strong>Quality Assurance:</strong> We meticulously source our products to ensure they meet the highest standards of quality and freshness. We believe that every meal should be made with the finest ingredients.</li>
+                <li><strong>Community-Centric:</strong> We support local farmers and producers, fostering a strong connection between our customers and the communities we serve. We are dedicated to contributing to the growth and well-being of our local partners.</li>
+                <li><strong>Customer Satisfaction:</strong> Your satisfaction is our top priority. We offer a wide range of products, flexible delivery options, and responsive customer support to meet your needs.</li>
+                <li><strong>Sustainability:</strong> We are committed to sustainability and reducing our environmental footprint. We strive to minimize waste, promote eco-friendly products, and explore innovative ways to make a positive impact on our planet.</li>
+            </ul>
+            <p>
+                Behind the scenes at GoMart, we have a passionate and experienced team dedicated to ensuring your shopping experience is exceptional. From our expert product curators to our friendly customer service representatives, each member of our team plays a vital role in making your grocery shopping hassle-free and enjoyable.
+                <br><br>
+            </p>
+        </div>
+        <footer>
+            <div id="myinfo">
+                Vidya Sreekumar<br>
+                NetID: vxs220066<br>
+                CS 6314.001
+            </div>
+            <p>Free delivery for first time users!</p>
+        </footer>
+        <script>
+            const d = new Date();
+            document.getElementById("date").innerHTML = d;
+        </script>
+        <script type="text/javascript" src="implement.js"></script>
+        <script src="cards.js"></script>
+    </body>
+</html>

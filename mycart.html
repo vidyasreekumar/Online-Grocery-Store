@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Grocery Store</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+
+        <header>
+                GoMart 
+                <div class="cart">
+                    <a href="mycart.html">
+                        <img src="images/headercart.jpg" height="25px" width="30px">
+                    </a>
+                    <div id="cartCount">0</div>
+                </div>
+                <div id="dateTime">
+                    <p id="date"></p>
+                </div>
+        </header>
+        <div class="navbar">
+            <a href="my-account.html">My-Account</a>
+            <a class="active" href="mycart.html">My Cart</a>
+            <a href="freshproducts.html">Fresh Products</a>
+            <a href="frozen.html">Frozen</a>
+            <a href="pantry.html">Pantry</a>
+            <a href="breakfast&cereal.html">Breakfast & Cereal</a>
+            <a href="baking.html">Baking</a>
+            <a href="snacks.html">Snacks</a>
+            <a href="candy.html">Candy</a>
+            <a href="speciality_shops.html">Speciality Shops</a>
+            <a href="deals.html">Deals</a>
+            <a href="about-us.html">About-Us</a>
+            <a href="contact-us.html">Contact-Us</a>
+            <a href="login.html">Signout</a>
+        </div>
+        <div class="sidebar">
+        </div> 
+        <!-- <div class="container">
+            <div class="row col-md-12">
+                <h3>
+                    Shopping Cart
+                </h3>
+            </div>
+        </div> -->
+        <div class="cartMain">
+        <div class="row">
+            <div class="procontainer" id="beforeShopping">
+                <!-- <div class="items_header">
+                    <h5 class="tid">TID</h5>
+                    <h5 class="item_Number">No.</h5>
+                    <h5 class="item_name">Item</h5>
+                    <h5 class="categoryfield">Category</h5>
+                    <h5 class="subcategory">Subcategory</h5>
+                    <h5 class="price_of_item">Price</h5>
+                    <h5 class="quantity_of_products">Quantity</h5>
+                    <h5 class="total_price">Total</h5>
+                </div> -->
+                <div class="products">
+    
+                </div>
+            </div>
+            <div id="doneShopping" style="display: none;">
+                <h2 style="text-align: center;">Thank You for Shopping</h2>
+            </div>
+        </div>
+        <!-- <div class="row" style="text-align: center; padding-top: 10px ;" id="removeButtons">
+            <button onclick="revert()">Cancel</button>
+            <button onclick="checkout()">Checkout</button>
+        </div> -->
+    </div>
+        <!-- <div class="cartMain" id="cartMain"></div> -->
+        <!-- <div id="label" class="label">
+        </div> -->
+        <footer>
+            <div id="myinfo">
+                Vidya Sreekumar<br>
+                NetID: vxs220066<br>
+                CS 6314.001
+            </div>
+            <p>Free delivery for first time users!</p>
+        </footer>
+        <script>
+            const d = new Date();
+            document.getElementById("date").innerHTML = d;
+        </script>
+        <script src="implement.js"></script>
+        <!-- <script src="implementJSON.js"></script>
+        <script src="generateCart.js"></script> -->
+    </body>
+</html>
