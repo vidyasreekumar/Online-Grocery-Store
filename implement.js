@@ -362,33 +362,8 @@ function displayCart() {
                         const cell = row.insertCell();
                         cell.textContent = item[header];
                     });
-                    // const actionsCell = row.insertCell();
-                    // const checkItemsButton = document.createElement("button");
-                    // checkItemsButton.textContent = "View Items";
-                    // checkItemsButton.addEventListener("click", () => checkItems(transaction.TransactionID, row));
-                    // actionsCell.appendChild(checkItemsButton);
                 });
                 productContainer.appendChild(table);
-
-
-                // Object.values(cartItems).map(item => {
-                //     productContainer.innerHTML += `
-                //     <div class="products">
-                //         <div class="tid">${item.TransactionID}</div>
-                //         <div class="item_Number">${item.ItemNo}</div>
-                //         <div class="item_name">${item.Name}</div>
-                //         <div class="categoryfield">${item.Category}</div>
-                //         <div class="subcategory">${item.Subcategory}</div>
-                //         <div class="price_of_item">${item.UnitPrice}</div>
-                //         <div class="quantity_of_products">
-                //             ${item.Quantity}
-                //         </div>
-                //         <div class="total_price">
-                //             ${parseFloat(item.Total_Price).toFixed(2)}
-                //         </div>
-                //     </div>
-                //     `;
-                // });
 
                 productContainer.innerHTML += `
                     <div class="totalBasket">
